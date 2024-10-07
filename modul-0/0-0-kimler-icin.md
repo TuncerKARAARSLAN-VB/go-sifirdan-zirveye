@@ -1,3 +1,0 @@
-# Eğitim herkes için
-
-Go dili eğitimini almak için en az bir programlama dilinde temel bazı bilgileri bilmenizi beklerim. En azında veri tipleri hakkında kısa bir bilgi sizin için iyi olacaktır. Ancak korkmayın, alacağınız eğitimi dikkatlice sonuna kadar izlediğinizde neredeyse herşeyi anladığınızı göreceksiniz. Eğitimlerde bu konulara kısaca değişeneceğim. Sorularını iletirseniz, en kısa zamanda sizlere destek sağlayacağım. Eğitimin keyfini çıkarın.
