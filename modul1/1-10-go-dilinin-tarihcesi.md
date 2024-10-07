@@ -1,3 +1,5 @@
+![Go](images/go-gezinti.png)
+
 Go dili, 2007 yılında Google'da Rob Pike, Ken Thompson ve Robert Griesemer tarafından geliştirilmiştir. Bu dilin yaratılma amacı, yazılım geliştirme sürecinde karşılaşılan sorunları çözmek ve modern yazılım geliştirme ihtiyaçlarını karşılamaktır. İşte Go dilinin tarihçesi hakkında bazı önemli noktalar:
 
 ### Geliştirme Süreci
