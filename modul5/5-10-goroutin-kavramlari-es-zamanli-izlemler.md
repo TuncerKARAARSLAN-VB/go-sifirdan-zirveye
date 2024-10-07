@@ -1,5 +1,3 @@
-## Modül 5: Eş Zamanlı Programlama (Concurrency)
-
 ### 1. Goroutine'ler
 
 #### 1.1 Goroutine Kavramı ve Go’da Eş Zamanlı İşlemler
