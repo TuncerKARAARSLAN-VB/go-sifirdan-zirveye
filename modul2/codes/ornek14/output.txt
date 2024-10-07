@@ -1,0 +1,3 @@
+Fprint: Bu yazı dosyaya yazılıyor.
+Fprintln: Bu yazı dosyada yeni satıra geçer.
+Fprintf: Dosyaya biçimlendirilmiş çıktı: 100 ve girdi.
