@@ -24,6 +24,8 @@ Go dilinde sayısal veri türleri iki ana kategoriye ayrılır: tamsayılar ve o
 
 #### c. Örnek Kullanım
 
+[Örnek 1 Code](codes/ornek1/ornek1.go)
+
 ```go
 package main
 
@@ -38,11 +40,15 @@ func main() {
 }
 ```
 
+![Örnek 1 kodu ve çıktısı](./images/ornek1.png)
+
 ### 2. Karakter Veri Türü
 
 Go dilinde karakterler `string` veri tipi ile temsil edilir. `string`, metinleri depolamak için kullanılır ve Unicode karakterlerini destekler.
 
 #### a. Örnek Kullanım
+
+[Örnek 2 Code](codes/ornek2/ornek2.go)
 
 ```go
 package main
@@ -55,11 +61,15 @@ func main() {
 }
 ```
 
+![Örnek 2 çıktı](images/ornek2.png)
+
 ### 3. Mantıksal Veri Türü
 
 Mantıksal veri türü `bool` olarak adlandırılır ve iki değer alabilir: `true` veya `false`. Mantıksal değişkenler genellikle koşul ifadelerinde kullanılır.
 
 #### a. Örnek Kullanım
+
+[Örnek 3 Code](codes/ornek3/ornek3.go)
 
 ```go
 package main
@@ -71,6 +81,7 @@ func main() {
     fmt.Println("Aktif Mi?:", isActive)
 }
 ```
+![Örnek 3 Çıktı](images/ornek3.png)
 
 ### 4. Diziler (Arrays)
 
@@ -87,6 +98,8 @@ var numbers [5]int // 5 elemanlı bir tamsayı dizisi
 Dizinin elemanlarına erişim indeks kullanılarak yapılır. İndeksler 0'dan başlar.
 
 #### c. Örnek Kullanım
+
+[Örnek 4 Code](codes/ornek4/ornek4.go)
 
 ```go
 package main
@@ -105,6 +118,8 @@ func main() {
 }
 ```
 
+![Örnek 4 Çıktı](images/ornek4.png)
+
 ### 5. Kesitler (Slices)
 
 Kesitler, dinamik boyutlu dizilerdir ve `make` fonksiyonu kullanılarak oluşturulabilir. Kesitler, dizilerden daha esnek ve kullanışlıdır.
@@ -116,6 +131,8 @@ slice := make([]int, 0) // Boş bir tamsayı kesiti
 ```
 
 #### b. Örnek Kullanım
+
+[Örnek 5 Code](codes/ornek5/ornek5.go)
 
 ```go
 package main
@@ -134,6 +151,7 @@ func main() {
     }
 }
 ```
+![Örnek 5 Çıktı](images/ornek5.png)
 
 ### Sonuç
 

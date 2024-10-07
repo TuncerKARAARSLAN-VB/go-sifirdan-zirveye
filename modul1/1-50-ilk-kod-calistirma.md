@@ -21,6 +21,9 @@ VS Code'da yeni bir dosya oluşturun:
 
 ### 5. "Hello, World!" Kodunu Yazın
 `hello-world.go` dosyasına aşağıdaki kodu ekleyin:
+
+[Hello World Code](codes/hello-world/hello-world.go)
+
 ```go
 package hello-world
 
@@ -62,7 +65,7 @@ Eğer her şey doğru bir şekilde yapıldıysa, terminalde aşağıdaki gibi bi
 Hello, World!
 ```
 
-!![Hello World Çıktısı](./images/hello-world-cikti.png)
+![Hello World Çıktısı](./images/hello-world-cikti.png)
 
 ### Özet
 Bu adımlar sayesinde Visual Studio Code kullanarak Go ile "Hello, World!" programını yazdınız, derlediniz ve çalıştırdınız. Go dilinin diğer özelliklerini keşfetmek için yeni dosyalar ve projeler oluşturmaya devam edebilirsiniz!
