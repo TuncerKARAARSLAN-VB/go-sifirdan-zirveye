@@ -1,3 +1,5 @@
+!![Go Environment](./images/go-concurrency.webp)
+
 Go dilinin (veya Golang) öne çıkan özellikleri, onu modern yazılım geliştirme için cazip bir seçenek haline getirmektedir. İşte Go dilinin başlıca özellikleri:
 
 ### 1. **Statik Tip Kontrolü**
