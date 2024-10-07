@@ -17,16 +17,16 @@ VS Code'da yeni bir proje klasörü oluşturun. Örneğin, `hello-world` adında
 ### 4. Yeni Bir Go Dosyası Oluşturun
 VS Code'da yeni bir dosya oluşturun:
 - **File > New File** veya sağ üstteki **New File** ikonuna tıklayın.
-- Dosya adını `main.go` olarak belirleyin.
+- Dosya adını `hello-world.go` olarak belirleyin.
 
 ### 5. "Hello, World!" Kodunu Yazın
-`main.go` dosyasına aşağıdaki kodu ekleyin:
+`hello-world.go` dosyasına aşağıdaki kodu ekleyin:
 ```go
-package main
+package hello-world
 
 import "fmt"
 
-func main() {
+func hello-world() {
     fmt.Println("Hello, World!")
 }
 ```
@@ -41,19 +41,19 @@ VS Code'da bir terminal açın:
 ### 8. Go Programını Derleyin
 Aşağıdaki komutu terminalde çalıştırarak programınızı derleyin:
 ```bash
-go build main.go
+go build hello-world.go
 ```
-Bu komut, `main.go` dosyanızı derler ve çalışma dosyası oluşturur.
+Bu komut, `hello-world.go` dosyanızı derler ve çalışma dosyası oluşturur.
 
 ### 9. Programı Çalıştırın
 Derleme işlemi başarılı ise, aşağıdaki komutla programınızı çalıştırabilirsiniz:
 - Windows için:
   ```bash
-  .\main.exe
+  .\hello-world.exe
   ```
 - Linux veya macOS için:
   ```bash
-  ./main
+  ./hello-world
   ```
 
 ### 10. Çıktıyı Kontrol Edin
