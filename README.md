@@ -19,7 +19,6 @@ Aşağıda, Go Dili Eğitimi İçerik Ajandası'nın markdown formatında düzen
 - İlk Go programı yazma ve çalıştırma.
   - Go çalışma zamanı (runtime) nasıl çalışır?
   - Go'nun derleme ve çalıştırma süreci.
-- Go ortam değişkenleri (GOPATH, GOROOT).
 
 ## Modül 2: Temel Go Yapıları
 - **Değişkenler ve Veri Tipleri**

@@ -15,6 +15,8 @@ Go dilinin (veya Golang) öne çıkan özellikleri, onu modern yazılım gelişt
 ### 4. **Derleme Hızı**
    - Go, çok hızlı bir derleme süresine sahiptir. Bu, geliştiricilerin hızlı bir şekilde kod yazıp test etmelerine olanak tanır.
 
+!![Günümüzün her yönden en hızlısı](images/lamborghini.png)
+
 ### 5. **Modülerlik ve Paket Yönetimi**
    - Go, kodun modüler bir şekilde yazılmasına olanak tanır. Paketler sayesinde kodun tekrar kullanılabilirliği artırılır.
    - Go modül sistemi, dış kütüphanelerin kolayca yönetilmesini sağlar.
