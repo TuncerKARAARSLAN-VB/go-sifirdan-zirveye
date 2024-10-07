@@ -76,6 +76,8 @@ Go, çeşitli veri tipleri sunar. Bunlar arasında temel veri tipleri ve yapısa
 
 Aşağıda, değişkenlerin ve veri tiplerinin kullanıldığı basit bir örnek verilmiştir:
 
+[Değişkenler Code](codes/degiskenler/degiskenler.go)
+
 ```go
 package main
 
