@@ -1,14 +1,16 @@
 # Eğitim herkes için
 
-Eğitimi dikkatlice sonuna kadar izlediğinizde neredeyse herşeyi anladığınızı göreceksiniz. Eğitimlerde her konuya biraz değineceğim. Ancak sizler sıkmayacağım. Sıfırdan sizi alıp artık go dili ile sizler de uygulamalar geliştirebileceksiniz. Dünyanın en yükselen trend dillerinden birisi olan Go konusunda sizler de artık geliştirici olarak piyasadaki en çok talep gören kişilerden birisi olacaksınız. 
+Bu eğitimi dikkatlice takip ettiğinizde, Go diline dair hemen her şeyi anlayabildiğinizi fark edeceksiniz. Her konuyu adım adım ele alacağım, ancak sizi sıkmadan, anlaşılır bir biçimde ilerleyeceğiz. Bu eğitim, sıfır bilgi seviyesinden başlayarak, sizi Go diliyle kendi uygulamalarınızı geliştirebilecek düzeye getirecek. Dünyanın en hızlı yükselen dillerinden biri olan Go ile siz de geliştirici olarak iş dünyasında talep gören yeteneklerden biri olacaksınız.
 
-Eğitimi izlerken lütfen içeriklerdeki eğitimleri lütfen uygulayın. Geliştirme ortamı için pek çok olasılık var. Makinenizin çok iyi olmasına gerek yok. Temel bir bilgisayar ile rahatlıklar çalışabilirsiniz. Tek yapmanız gereken işletim sisteminize go için gerekli kurulumları yapmak. Eğitim içeriğinde nasıl yapılır anlatılıyor.
+Eğitim sürecinde önerim, anlatılan içerikleri mutlaka uygulamanızdır. Geliştirme ortamınızı hazırlamak için güçlü bir bilgisayara ihtiyacınız yok. Basit bir sistemle bile rahatça çalışabilirsiniz. Tek yapmanız gereken, işletim sisteminize Go dilini kurmak, ki bu kurulumun nasıl yapılacağını eğitimde adım adım anlatıyorum.
 
-Eğitim içeriklerini lütfen eksiksiz tamamlayın. Koda dokunun. 3 temel algıyla öğreneceksiniz. 
+Kodlamayı öğrenmek için üç temel duyuyu harekete geçireceğiz:
 
-1. Görme, sizleri video eğitimleri ile destekliyorum 
-2. İşitme, size ben kendi sesimle anlatacağım.
-3. Kodlama, işte burası sizin tam hakimiyetinizi sağlayacak. 
+**Görsel:** Video eğitimleriyle öğrenmenizi pekiştireceğim.
 
-Kısa zamanda bol bol örnekler yaparak ve kafanızdaki projeleri uygulamalara geçirerek, çok kısa zamanda şanslı kişilerin arasında yer alacaksınız.
+**İşitsel:** Size her konuyu kendi sesimle anlatacağım.
 
+**Uygulamalı:** Kod yazmak, tam anlamıyla hakimiyetinizi kazanmanızı sağlayacak.
+Eğitimde sunulan örneklerle bol bol pratik yaparak ve kendi projelerinizi geliştirerek, kısa sürede ileri seviyeye ulaşabileceksiniz. Bu süreç, sizi Go dilinde uzmanlaşarak öne çıkan şanslı kişiler arasına katacak.
+
+Unutmayın, koda dokunmak en önemli adımdır. Eğitim içeriklerini eksiksiz tamamlayarak, güçlü bir temele sahip olacaksınız.

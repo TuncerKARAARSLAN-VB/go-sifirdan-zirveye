@@ -1,6 +1,6 @@
-GitHub Codespaces, GitHub'ın sağladığı bulut tabanlı geliştirme ortamıdır. Geliştiricilerin projelerini hızlı bir şekilde başlatmasını ve geliştirmesini sağlar. İşte GitHub Codespaces'ın ana özellikleri:
+# GitHub Codespaces Ana Özellikleri
 
-### Ana Özellikler
+## Ana Özellikler
 
 1. **Hızlı Başlangıç**:
    - Projenizi hızlıca oluşturabilir ve geliştirme ortamınızı dakikalar içinde başlatabilirsiniz. Geliştiriciler, yerel bir kurulum yapmadan, sadece bir tarayıcı aracılığıyla çalışabilir.
@@ -23,7 +23,8 @@ GitHub Codespaces, GitHub'ın sağladığı bulut tabanlı geliştirme ortamıd�
 7. **Kaynak Kullanımı**:
    - GitHub Codespaces, kullanıcıların projelerini geliştirmek için gerekli olan kaynakları (CPU, RAM) bulut üzerinde sağladığı için, yerel makinenizin donanım sınırlamalarından etkilenmez.
 
-### Kullanım Alanları
+## Kullanım Alanları
+
 - **Yeni Projeler**: Hızla yeni bir projeye başlamak için idealdir.
 - **Hata Ayıklama**: Kod üzerinde değişiklik yaparken anlık sonuçları görebilme imkanı sağlar.
 - **Eğitim ve Öğretim**: Eğitimcilerin öğrencilere programlama dersi vermesi için kolay bir ortam sunar.
