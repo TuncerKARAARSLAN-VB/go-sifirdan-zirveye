@@ -1,6 +1,8 @@
+# Go Güçlü Yanları ve Kullanım Alanları
+
 Go (veya Golang), Google tarafından geliştirilen ve 2009 yılında piyasaya sürülen bir programlama dilidir. Go'nun güçlü yönleri ve kullanım alanları şu şekilde özetlenebilir:
 
-### Go’nun Güçlü Yönleri
+## Go’nun Güçlü Yönleri
 
 1. **Basitlik ve Okunabilirlik**:
    - Go, basit ve temiz bir sözdizimi sunar. Bu, yeni başlayanların öğrenmesini kolaylaştırır ve mevcut kodun okunabilirliğini artırır.
@@ -23,7 +25,7 @@ Go (veya Golang), Google tarafından geliştirilen ve 2009 yılında piyasaya s�
 7. **Platform Bağımsızlığı**:
    - Go, farklı platformlarda (Windows, Linux, macOS) çalışabilir. Ayrıca, derlenen ikili dosya tek bir dosya olarak taşınabilir.
 
-### Go’nun Kullanım Alanları
+## Go’nun Kullanım Alanları
 
 1. **Web Geliştirme**:
    - Go, yüksek performanslı web sunucuları ve RESTful API'ler geliştirmek için sıklıkla kullanılır. `net/http` paketi, web uygulamaları için geniş bir destek sunar.
@@ -46,6 +48,6 @@ Go (veya Golang), Google tarafından geliştirilen ve 2009 yılında piyasaya s�
 7. **Oyun Geliştirme**:
    - Go, basit oyunlar ve oyun motorları geliştirmek için kullanılabilir. Yüksek performanslı bir dil olması, oyun geliştirme için avantaj sağlar.
 
-### Sonuç
+## Sonuç
 
 Go, modern yazılım geliştirme ihtiyaçlarına yanıt verebilecek güçlü özelliklere sahip bir programlama dilidir. Eş zamanlılık desteği, hız ve basitlik gibi özellikleri, onu birçok farklı alanda kullanılabilir hale getirmektedir. Özellikle web geliştirme, dağıtık sistemler ve bulut tabanlı uygulamalar için popüler bir tercih olmuştur.
