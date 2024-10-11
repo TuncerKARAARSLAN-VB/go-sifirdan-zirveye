@@ -1,10 +1,12 @@
+# Veri Tipleri
+
 Go dilinde sayısal, karakter, mantıksal ve diziler gibi temel veri türleri, programlamanın temel taşlarıdır. Aşağıda her bir veri türü hakkında detaylı bilgi verilmiştir.
 
-### 1. Sayısal Veri Türleri
+## 1. Sayısal Veri Türleri
 
 Go dilinde sayısal veri türleri iki ana kategoriye ayrılır: tamsayılar ve ondalıklı sayılar.
 
-#### a. Tamsayılar (Integers)
+### a. Tamsayılar (Integers)
 
 - **int**: Platforma bağlı olarak 32 veya 64 bit.
 - **int8**: 8 bit işaretli tamsayı. (-128 ile 127 arasında değer alabilir)
@@ -17,12 +19,12 @@ Go dilinde sayısal veri türleri iki ana kategoriye ayrılır: tamsayılar ve o
 - **uint32**: 32 bit işaretsiz tamsayı. (0 ile 4,294,967,295 arasında değer alabilir)
 - **uint64**: 64 bit işaretsiz tamsayı. (0 ile 18,446,744,073,709,551,615 arasında değer alabilir)
 
-#### b. Ondalıklı Sayılar (Floating Point Numbers)
+### b. Ondalıklı Sayılar (Floating Point Numbers)
 
 - **float32**: 32 bit ondalıklı sayı.
 - **float64**: 64 bit ondalıklı sayı.
 
-#### c. Örnek Kullanım
+### c. Örnek Kullanım
 
 [Örnek 1 Code](codes/ornek1/ornek1.go)
 
@@ -42,11 +44,11 @@ func main() {
 
 ![Örnek 1 kodu ve çıktısı](./images/ornek1.png)
 
-### 2. Karakter Veri Türü
+## 2. Karakter Veri Türü
 
 Go dilinde karakterler `string` veri tipi ile temsil edilir. `string`, metinleri depolamak için kullanılır ve Unicode karakterlerini destekler.
 
-#### a. Örnek Kullanım
+### a. Örnek Kullanım
 
 [Örnek 2 Code](codes/ornek2/ornek2.go)
 
@@ -63,11 +65,11 @@ func main() {
 
 ![Örnek 2 çıktı](images/ornek2.png)
 
-### 3. Mantıksal Veri Türü
+## 3. Mantıksal Veri Türü
 
 Mantıksal veri türü `bool` olarak adlandırılır ve iki değer alabilir: `true` veya `false`. Mantıksal değişkenler genellikle koşul ifadelerinde kullanılır.
 
-#### a. Örnek Kullanım
+### a. Örnek Kullanım
 
 [Örnek 3 Code](codes/ornek3/ornek3.go)
 
@@ -81,23 +83,24 @@ func main() {
     fmt.Println("Aktif Mi?:", isActive)
 }
 ```
+
 ![Örnek 3 Çıktı](images/ornek3.png)
 
-### 4. Diziler (Arrays)
+## 4. Diziler (Arrays)
 
 Diziler, aynı türdeki birden fazla veriyi saklamak için kullanılan veri yapılarıdır. Go dilinde dizilerin boyutu sabittir. Dizinin boyutu tanımlanırken belirtilmelidir.
 
-#### a. Dizinin Tanımlanması
+### a. Dizinin Tanımlanması
 
 ```go
-var numbers [5]int // 5 elemanlı bir tamsayı dizisi
+var numbers [5] int // 5 elemanlı bir tamsayı dizisi
 ```
 
-#### b. Dizinin Kullanımı
+### b. Dizinin Kullanımı
 
 Dizinin elemanlarına erişim indeks kullanılarak yapılır. İndeksler 0'dan başlar.
 
-#### c. Örnek Kullanım
+### c. Örnek Kullanım
 
 [Örnek 4 Code](codes/ornek4/ornek4.go)
 
@@ -120,17 +123,17 @@ func main() {
 
 ![Örnek 4 Çıktı](images/ornek4.png)
 
-### 5. Kesitler (Slices)
+## 5. Kesitler (Slices)
 
 Kesitler, dinamik boyutlu dizilerdir ve `make` fonksiyonu kullanılarak oluşturulabilir. Kesitler, dizilerden daha esnek ve kullanışlıdır.
 
-#### a. Kesit Tanımlama
+### a. Kesit Tanımlama
 
 ```go
 slice := make([]int, 0) // Boş bir tamsayı kesiti
 ```
 
-#### b. Örnek Kullanım
+### b. Örnek Kullanım
 
 [Örnek 5 Code](codes/ornek5/ornek5.go)
 
@@ -151,8 +154,9 @@ func main() {
     }
 }
 ```
+
 ![Örnek 5 Çıktı](images/ornek5.png)
 
-### Sonuç
+## Sonuç
 
 Go dilinde sayısal, karakter, mantıksal veri türleri ve diziler, verileri yapılandırmak ve yönetmek için kritik öneme sahiptir. Bu türleri etkili bir şekilde kullanmak, yazılım geliştirme sürecinde verimliliği artırır ve kodun okunabilirliğini sağlar.

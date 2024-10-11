@@ -1,16 +1,19 @@
-### Modül 3: Veri Yapıları ve Gösterim
+# Array Slice
+
+## Modül 3: Veri Yapıları ve Gösterim
 
 Go dilinde veri yapıları temel olarak **array** (diziler) ve **slice** (dilimler) üzerinden gerçekleştirilir. Array ve slice’lar Go dilinde veri kümelerini temsil etmenin önemli yollarıdır. Aşağıda, array ve slice yapılarının nasıl tanımlandığını, nasıl kullanıldığını ve farklarını detaylı bir şekilde ele alalım.
 
 ---
 
-### 1. **Array Tanımlama ve Kullanımı**
+## 1. **Array Tanımlama ve Kullanımı**
 
 **Array** (dizi), sabit bir uzunluğa sahip olan ve aynı türden elemanları saklayan bir veri yapısıdır. Diziler, tanımlandıktan sonra boyutları değiştirilemez. Sabit boyutlu olduğu için bellekte sabit bir alan kaplar.
 
 [Örnek 1 Code](codes/ornek1/ornek1.go)
 
-#### Örnek: Array Tanımlama
+### Örnek: Array Tanımlama
+
 ```go
 package main
 
@@ -30,12 +33,14 @@ func main() {
     fmt.Println("Dizi:", numbers)
 
     // Diziyi doğrudan tanımlama ve başlatma
-    colors := [3]string{"Kırmızı", "Yeşil", "Mavi"}
+    colors := [3] string {"Kırmızı", "Yeşil", "Mavi"}
+    
     fmt.Println("Renkler:", colors)
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 Dizi: [10 20 30 40 50]
 Renkler: [Kırmızı Yeşil Mavi]
@@ -43,18 +48,18 @@ Renkler: [Kırmızı Yeşil Mavi]
 
 ![Örnek 1 Çıktı](images/ornek1.png)
 
-
 - Dizilerde eleman sayısı sabittir. Örneğin, `var numbers [5]int` ifadesi 5 elemanlı bir dizi tanımlar ve tüm elemanlar başlangıçta varsayılan değere (int için `0`) sahiptir.
 
 ---
 
-### 2. **Slices ve Alt Dilimler**
+## 2. **Slices ve Alt Dilimler**
 
 **Slice** (dilim), Go dilinde dizilere kıyasla çok daha esnek bir yapıdır. Slice, eleman sayısı dinamik olarak değişebilen bir diziyi ifade eder. Dizi ile aynı türden verileri tutar, ancak boyutu değiştirilebilir. Slice’lar bir array üzerine kuruludur.
 
 [Örnek 2 Code](codes/ornek2/ornek2.go)
 
-#### Örnek: Slice Tanımlama
+### Örnek: Slice Tanımlama
+
 ```go
 package main
 
@@ -72,7 +77,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 Asal sayılar: [2 3 5 7 11 13]
 Diziden alınan slice: [20 30 40]
@@ -83,7 +89,8 @@ Diziden alınan slice: [20 30 40]
 - `primes` adlı dilim, 6 elemanlı bir dilimdir ve başlangıç değerleri ile doğrudan tanımlanmıştır.
 - `sliceNumbers`, `numbers` dizisinin bir alt dilimini ifade eder ve 1. indeks ile 3. indeks arasındaki elemanları içerir (4. indeks hariç).
 
-#### Alt Dilimler
+### Alt Dilimler
+
 - Alt dilimler, bir dilimden veya diziden belirli bir aralık seçmek için kullanılır. `slice[start:end]` ifadesi, `start` indeksinden başlayıp `end-1` indeksine kadar olan elemanları seçer.
 
 ---
@@ -94,7 +101,8 @@ Slice'ların en önemli özelliklerinden biri dinamik olarak genişleyebilmeleri
 
 [Örnek 3 Code](codes/ornek3/ornek3.go)
 
-#### Örnek: Slice Uzunluğu ve Kapasitesi
+### Örnek: Slice Uzunluğu ve Kapasitesi
+
 ```go
 package main
 
@@ -116,7 +124,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 Dilim: [1 2 3 4 5]
 Uzunluk: 5
@@ -134,7 +143,8 @@ Yeni kapasite: 10
 
 ![Örnek 3 Çıktı](images/ornek3.png)
 
-### Özet:
+### Özet
+
 - **Array**: Sabit uzunluklu ve aynı türde veriler içerir. Bellekte sabit bir yer kaplar.
 - **Slice**: Dinamik olarak genişleyebilen, esnek bir veri yapısıdır. Dizi üzerine kuruludur ve alt dilimler oluşturabilir.
 - Slice'lar boyutları gerektikçe otomatik olarak büyür ve bu sayede Go'da esnek veri yapıları oluşturulabilir.

@@ -1,16 +1,19 @@
-### Modül 3: Veri Yapıları ve Gösterim - Structs
+# Stucture
+
+## Modül 3: Veri Yapıları ve Gösterim - Structs
 
 Go dilinde **struct** (yapı), birden fazla veriyi bir arada tutabilen bir veri türüdür. Yapılar, farklı türdeki verileri bir araya getirerek daha karmaşık veri tipleri oluşturmayı sağlar. Struct'lar, özellikle nesne yönelimli programlama yaklaşımında kullanılır ve verileri gruplayarak daha düzenli ve anlamlı bir yapı oluşturur.
 
 ---
 
-### 1. **Go’da Yapı (Struct) Tanımlama**
+## 1. **Go’da Yapı (Struct) Tanımlama**
 
 Struct tanımlamak için `type` anahtar kelimesi kullanılır. Aşağıda basit bir struct tanımlama örneği verilmiştir:
 
 [Örnek 8 Code](codes/ornek8/ornek8.go)
 
-#### Örnek: Basit Bir Struct Tanımlama
+### Örnek: Basit Bir Struct Tanımlama
+
 ```go
 package main
 
@@ -32,7 +35,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 İsim: Alice
 Yaş: 30
@@ -41,18 +45,20 @@ Yaş: 30
 ![Örnek 8 Çıktı](images/ornek8.png)
 
 Bu örnekte:
+
 - `Person` adında bir struct tanımlanmıştır ve iki alan içerir: `Name` (string) ve `Age` (int).
 - `person1` adında bir `Person` nesnesi oluşturulmuş ve değerleri atanmıştır.
 
 ---
 
-### 2. **İç İçe Struct Kullanımı**
+## 2. **İç İçe Struct Kullanımı**
 
 Struct'lar, başka bir struct içinde de tanımlanabilir. Bu, verileri hiyerarşik bir şekilde organize etmek için kullanışlıdır.
 
 [Örnek 9 Code](codes/ornek9/ornek9.go)
 
-#### Örnek: İç İçe Struct Kullanımı
+### Örnek: İç İçe Struct Kullanımı
+
 ```go
 package main
 
@@ -90,7 +96,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 İsim: Alice
 Yaş: 30
@@ -101,6 +108,7 @@ Yaş: 30
 ![Örnek 9 Çıktı](images/ornek9.png)
 
 Bu örnekte:
+
 - `Address` adında bir struct tanımlanmış ve `City` ve `Country` alanlarını içermektedir.
 - `Person` struct'ı ise bir `Address` alanı içermektedir.
 
@@ -112,7 +120,8 @@ Go'da struct'lara metot eklemek mümkündür. Metotlar, belirli bir struct ile i
 
 [Örnek 10 Code](codes/ornek10/ornek10.go)
 
-#### Örnek: Struct Metodu Tanımlama
+### Örnek: Struct Metodu Tanımlama
+
 ```go
 package main
 
@@ -138,7 +147,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 Merhaba, benim adım Alice ve yaşım 30.
 ```
@@ -146,12 +156,13 @@ Merhaba, benim adım Alice ve yaşım 30.
 ![Örnek 10 Çıktı](images/ornek10.png)
 
 Bu örnekte:
+
 - `Greet` adında bir metot tanımlanmış ve `Person` struct'ı için bir işlev oluşturmaktadır.
 - Metot, `Person` nesnesinin adını ve yaşını yazdırır.
 
 ---
 
-### Özet
+## Özet
 
 - **Struct Tanımlama**: `type StructName struct { Field1 Type1; Field2 Type2; ... }`
 - **İç İçe Struct**: Başka bir struct içinde bir struct kullanarak daha karmaşık veri yapıları oluşturma.

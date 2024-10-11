@@ -1,6 +1,8 @@
+# Operatörler
+
 Go dilinde operatörler ve ifadeler, programlama dilinin temel yapı taşlarından biridir. Bu operatörler matematiksel işlemler, karşılaştırmalar ve mantıksal işlemler yapmak için kullanılır. İşte Go dilindeki operatörler ve ifadeler hakkında kısa bir açıklama:
 
-### 1. Matematiksel Operatörler
+## 1. Matematiksel Operatörler
 
 Matematiksel operatörler, sayısal değerler üzerinde işlem yapar. Go dilinde kullanılan temel matematiksel operatörler şunlardır:
 
@@ -30,9 +32,10 @@ func main() {
     fmt.Println("Modül:", a % b)      // 1
 }
 ```
+
 ![Örnek 6 Çıktı](images/ornek6.png)
 
-### 2. Karşılaştırma Operatörleri
+## 2. Karşılaştırma Operatörleri
 
 Karşılaştırma operatörleri, iki değeri karşılaştırarak bir boolean (true/false) sonucu döner. Go dilinde kullanılan karşılaştırma operatörleri şunlardır:
 
@@ -67,7 +70,7 @@ func main() {
 
 ![Örnek 7 Çıktı](images/ornek7.png)
 
-### 3. Mantıksal Operatörler
+## 3. Mantıksal Operatörler
 
 Mantıksal operatörler, boolean değerler üzerinde işlem yapar. Go dilinde kullanılan mantıksal operatörler şunlardır:
 
@@ -96,6 +99,6 @@ func main() {
 
 ![Örnek 8 Çıktı](images/ornek8.png)
 
-### Özet
+## Özet
 
 Go dilinde operatörler, sayılar ve boolean değerler üzerinde işlem yapmak için kullanılır. Matematiksel operatörler, sayısal işlemleri; karşılaştırma operatörleri, değerlerin eşitliğini veya büyüklüğünü; mantıksal operatörler ise boolean ifadeleri birleştirmek için kullanılır. Bu operatörler, program yazımında önemli bir rol oynar ve ifadelerin temel yapı taşlarıdır.

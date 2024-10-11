@@ -1,4 +1,6 @@
-### Modül 3: Veri Yapıları ve Gösterim - Maps (Sözlükler)
+# Maps
+
+## Modül 3: Veri Yapıları ve Gösterim - Maps (Sözlükler)
 
 Go dilinde **map** (sözlük), bir **anahtar-değer** ilişkisine dayanan veri yapısıdır. Bu yapıda her anahtar (key) bir değere (value) karşılık gelir ve anahtarlar benzersiz olmalıdır. `map` veri yapısı dinamik olarak genişleyebilir ve farklı türde anahtar ve değerler barındırabilir.
 
@@ -16,7 +18,7 @@ Go dilinde **map** (sözlük), bir **anahtar-değer** ilişkisine dayanan veri y
 - `keyType`: Map'teki anahtarların türü (örn: `string`, `int`).
 - `valueType`: Map'teki değerlerin türü (örn: `string`, `int`).
 
-#### Örnek: Map Tanımlama ve Kullanma
+### Örnek: Map Tanımlama ve Kullanma
 
 [Örnek 4 Code](codes/ornek4/ornek4.go)
 
@@ -38,7 +40,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 Yaşlar: map[Alice:25 Bob:30 Carol:27]
 ```
@@ -46,24 +49,28 @@ Yaşlar: map[Alice:25 Bob:30 Carol:27]
 ![Örnek 4 Code](images/ornek4.png)
 
 Bu örnekte:
+
 - `ageMap` adında bir map tanımlanmıştır. Anahtarlar `string` tipindedir ve karşılık gelen değerler `int` tipindedir.
 - Map başlangıçta bazı anahtar-değer çiftleri ile başlatılmıştır.
 
 ---
 
-### 2. **Map İşlemleri: Ekleme, Silme ve Arama**
+## 2. **Map İşlemleri: Ekleme, Silme ve Arama**
 
 **Map'ler** üzerinde çeşitli işlemler gerçekleştirilebilir: eleman ekleme, silme ve arama işlemleri gibi.
 
-#### a. **Ekleme**
+### a. **Ekleme**
+
 Map'e yeni bir anahtar-değer çifti eklemek için aşağıdaki sözdizimi kullanılır:
+
 ```go
 mapName[key] = value
 ```
 
 [Örnek 5 Code](codes/ornek5/ornek5.go)
 
-#### Örnek: Map'e Yeni Değer Ekleme
+### Örnek: Map'e Yeni Değer Ekleme
+
 ```go
 package main
 
@@ -81,7 +88,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 Güncellenmiş yaşlar: map[Alice:25 Bob:30 Carol:27]
 ```
@@ -90,7 +98,8 @@ Güncellenmiş yaşlar: map[Alice:25 Bob:30 Carol:27]
 
 Bu işlem, mevcut bir anahtara yeni bir değer atarsa, eski değer üzerine yazılır.
 
-#### b. **Silme**
+### b. **Silme**
+
 Map'ten bir eleman silmek için `delete()` fonksiyonu kullanılır.
 
 ```go
@@ -99,7 +108,8 @@ delete(mapName, key)
 
 [Örnek 6 Code](codes/ornek6/ornek6.go)
 
-#### Örnek: Map'ten Anahtar-Değer Silme
+### Örnek: Map'ten Anahtar-Değer Silme
+
 ```go
 package main
 
@@ -118,7 +128,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 Güncellenmiş yaşlar: map[Alice:25 Carol:27]
 ```
@@ -127,8 +138,10 @@ Güncellenmiş yaşlar: map[Alice:25 Carol:27]
 
 Bu örnekte, `Bob` anahtarı ve karşılık gelen değeri silinmiştir.
 
-#### c. **Arama**
+### c. **Arama**
+
 Bir map içinde bir anahtarın var olup olmadığını kontrol etmek için aşağıdaki yapıyı kullanabiliriz:
+
 ```go
 value, exists := mapName[key]
 ```
@@ -138,7 +151,8 @@ value, exists := mapName[key]
 
 [Örnek 7 Code](codes/ornek7/ornek7.go)
 
-#### Örnek: Map'te Anahtar Arama
+### Örnek: Map'te Anahtar Arama
+
 ```go
 package main
 
@@ -160,7 +174,8 @@ func main() {
 }
 ```
 
-#### Çıktı:
+### Çıktı
+
 ```
 Carol map'te yok.
 ```
@@ -171,7 +186,8 @@ Eğer anahtar map'te mevcut değilse, `exists` değeri `false` olur ve map'te bu
 
 ---
 
-### Map'in Özet Yapısı:
+## Map'in Özet Yapısı
+
 - **Tanımlama**: `map[keyType]valueType` şeklinde tanımlanır.
 - **Ekleme**: Map'e yeni anahtar-değer çifti eklemek için `mapName[key] = value`.
 - **Silme**: `delete(mapName, key)` ile anahtar ve değer silinir.

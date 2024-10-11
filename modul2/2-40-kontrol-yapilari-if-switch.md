@@ -1,12 +1,16 @@
-Go dilindeki kontrol yapıları, program akışını yönetmek ve koşullara göre farklı yollar izlemek için kullanılır. 
+# Kontrol Yapıları
 
-### 1. `if` ve `else` Yapıları
+Go dilindeki kontrol yapıları, program akışını yönetmek ve koşullara göre farklı yollar izlemek için kullanılır.
+
+## 1. `if` ve `else` Yapıları
+
 - **Temel Kullanım**: `if` yapısı, belirli bir koşulun doğru olup olmadığını kontrol eder. Eğer koşul doğruysa, ilgili kod bloğu çalıştırılır.
 - **`else` Kullanımı**: `else`, `if` koşulu yanlışsa alternatif bir yol sağlar.
 
 [Örnek 9 Code](codes/ornek9/ornek9.go)
 
 **Örnek**:
+
 ```go
 package main
 
@@ -24,15 +28,17 @@ func main() {
     }
 }
 ```
+
 ![Örnek 9 Çıktı](images/ornek9.png)
 
+# 2. `if` ile Kısa Değişken Tanımlama
 
-### 2. `if` ile Kısa Değişken Tanımlama
 Go’da `if` ifadesinde koşul tanımlarken kısa değişken tanımlaması yapılabilir. Bu, koşul ifadesinin başlangıcında tanımlanan bir değişkeni içerir.
 
 [Örnek 10 Code](codes/ornek10/ornek10.go)
 
 **Örnek**:
+
 ```go
 if y := 20; y < 15 {
     fmt.Println("Y değeri 15'ten küçük")
@@ -43,12 +49,14 @@ if y := 20; y < 15 {
 
 ![Örnek 10 Çıktı](images/ornek10.png)
 
-### 3. `switch` Yapısı
+## 3. `switch` Yapısı
+
 `switch`, bir değişkenin değerine göre farklı yollar izlemeyi sağlar. Birden fazla `case` ifadesi bulunabilir ve `switch` içindeki herhangi bir case koşulu doğru olduğunda, o case’e ait kod bloğu çalıştırılır.
 
 [Örnek 11 Code](codes/ornek11/ornek11.go)
 
 **Örnek**:
+
 ```go
 package main
 
@@ -74,7 +82,8 @@ func main() {
 
 ![Örnek 11 Çıktı](images/ornek11.png)
 
-### 4. `switch`-`case` Yapısındaki Farklılıklar
+## 4. `switch`-`case` Yapısındaki Farklılıklar
+
 Go'daki `switch` yapısı, bazı özellikleriyle diğer dillerden ayrılır:
 
 - **Varsayılan Durum**: `default` case, hiçbir case koşulu doğru değilse çalıştırılır.
@@ -83,6 +92,7 @@ Go'daki `switch` yapısı, bazı özellikleriyle diğer dillerden ayrılır:
 [Örnek 12 Code](codes/ornek12/ornek12.go)
 
 **Örnek**:
+
 ```go
 switch x := 2; x {
 case 1:
@@ -99,10 +109,14 @@ default:
 
 ![Örnek 12 Çıktı](images/ornek12.png)
 
-### 5. `for` Döngüsü
+## 5. `for` Döngüsü
+
 Go, döngü yapıları için sadece `for` döngüsünü kullanır. `for`, üç bileşenle tanımlanabilir: başlangıç ifadesi, koşul ifadesi ve artış ifadesi.
 
 **Örnek**:
+
+[Örnek 13 Code](codes/ornek13/ornek13.go)
+
 ```go
 package main
 
@@ -115,12 +129,14 @@ func main() {
 }
 ```
 
-### 6. Sonsuz Döngü
+## 6. Sonsuz Döngü
+
 Eğer koşul ifadesi belirtilmezse, `for` döngüsü sonsuz bir döngü haline gelir.
+
+**Örnek**:
 
 [Örnek 13 Code](codes/ornek13/ornek13.go)
 
-**Örnek**:
 ```go
 package main
 

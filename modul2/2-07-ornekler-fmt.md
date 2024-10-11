@@ -1,9 +1,10 @@
+# fmt kütüphanesi fonksiyon örnekleri
+
 Aşağıda, `fmt` paketindeki tüm temel fonksiyonları kullanan kapsamlı bir örnek bulunuyor. Bu örnekte yazdırma, formatlı yazdırma, kullanıcıdan girdi alma ve dosya gibi farklı çıktı hedeflerine yazdırma işlemleri ele alınmıştır. Örnek içerisinde ilk defa göreceğiniz komutlar yer alıyor. İlerleyen konularda tüm komutlar işlenmiş olacak. LÜtfen şimdilik sadece komutları ve üretilen çıktıları inceleyin. Kodların ne yaptığını hızlıca anlayacaksınız.
 
-### Örnek: `fmt` Paketinin Tüm Fonksiyonlarını Kullanma
+## Örnek: `fmt` Paketinin Tüm Fonksiyonlarını Kullanma
 
 [Örnek 14 Code](codes/ornek14/ornek14.go)
-
 
 ```go
 package main
@@ -84,8 +85,7 @@ func main() {
 
 ![Örnek 14 Text Çıktısı](images/ornek14-2.png)
 
-
-### Örnek Açıklamaları:
+## Örnek Açıklamaları
 
 1. **Yazdırma Fonksiyonları**: 
    - `Print`, `Println`, ve `Printf` kullanarak ekrana çıktı yazdırılır. `Printf`, biçimlendirilmiş bir şekilde çıktı üretir.
@@ -102,7 +102,7 @@ func main() {
 5. **Dosyadan Okuma**:
    - `Fscan`, `Fscanln`, ve `Fscanf`, bir dosyadan veri okumak için kullanılır. `os.Open` ile dosya açılır ve bu dosyadan veri okunur.
 
-### Çıktı:
+## Çıktı
+
 - Terminalde yazdırmalar, kullanıcı girdileri ve formatlı çıktı gözükecektir.
 - `output.txt` adlı dosyaya yazılan veriler de dosyada saklanacak ve dosya içeriği okunarak terminale yazdırılacaktır.
-

@@ -1,10 +1,14 @@
+# Fonksiyon Geliştirme
+
 Go dilinde fonksiyonlar basit ve etkili bir şekilde tanımlanıp kullanılabilir. İşte fonksiyonlarla ilgili temel konular:
 
-### 1. Fonksiyon Tanımlama ve Kullanma
+## 1. Fonksiyon Tanımlama ve Kullanma
+
 Go'da bir fonksiyon `func` anahtar kelimesi ile tanımlanır ve genellikle fonksiyon adını, parametre listesini ve dönüş değerini içerir.
 
 ```go
 package main
+
 import "fmt"
 
 // Fonksiyon tanımlama
@@ -20,7 +24,8 @@ func main() {
 
 Bu örnekte, `sayHello` isimli bir fonksiyon tanımlanmıştır ve `main` fonksiyonundan çağrılmıştır. `fmt.Println` ile ekrana bir metin yazdırılmıştır.
 
-### 2. Parametreler ve Dönüş Değerleri
+## 2. Parametreler ve Dönüş Değerleri
+
 Go'da fonksiyonlar parametreler alabilir ve bir veya daha fazla değer döndürebilir. Parametreler ve dönüş tipi fonksiyonun imzasında belirtilir.
 
 **Tek parametre ve dönüş değeri:**
@@ -60,7 +65,8 @@ func main() {
 
 Bu örnekte `add` fonksiyonu iki `int` parametre alır ve toplama işlemi yapar.
 
-### 3. Çoklu Dönüş Değeri Kullanımı
+## 3. Çoklu Dönüş Değeri Kullanımı
+
 Go'da fonksiyonlar birden fazla değer döndürebilir. Bu, özellikle bir sonuçla birlikte hata veya ek bilgi döndürmek için çok kullanışlıdır.
 
 ```go
@@ -87,7 +93,8 @@ func main() {
 
 Bu örnekte `divide` fonksiyonu iki değer döndürür: bölüm sonucu ve bir `error` (hata) nesnesi. Eğer `b == 0` olursa hata döndürülür, aksi takdirde bölüm sonucu döner.
 
-### Özet:
+## Özet
+
 - Go'da fonksiyonlar `func` anahtar kelimesi ile tanımlanır.
 - Fonksiyonlar parametre alabilir ve bir veya birden fazla değer döndürebilir.
 - Çoklu dönüş değeri Go'nun güçlü özelliklerinden biridir ve hata işleme gibi durumlar için sıklıkla kullanılır.
