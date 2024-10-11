@@ -33,8 +33,7 @@ func main() {
     fmt.Println("Dizi:", numbers)
 
     // Diziyi doğrudan tanımlama ve başlatma
-    colors := [3] string {"Kırmızı", "Yeşil", "Mavi"}
-    
+    colors := [3]string{"Kırmızı", "Yeşil", "Mavi"}
     fmt.Println("Renkler:", colors)
 }
 ```

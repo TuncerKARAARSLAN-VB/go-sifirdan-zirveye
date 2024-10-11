@@ -1,15 +1,17 @@
-### Arayüz Kavramı
+# Arayüz - Interface
 
-Arayüzler, Go dilinde nesne yönelimli programlama (OOP) konseptlerinin temelini oluşturan bir yapıdır. Bir arayüz, bir grup metotun imzalarını tanımlayarak, bu metotları uygulayacak olan türlerin (struct) belirli bir davranışı yerine getirmesini sağlar. Go'da arayüzler, esnekliği ve yeniden kullanılabilirliği artırmak için kullanılır.
+Arayüzler, Go dilinde belirli bir davranışı tanımlayan metot imzalarını barındıran bir yapıdır. Bir arayüz, bir grup metotun imzalarını tanımlayarak, bu metotları uygulayacak olan türlerin (struct) belirli bir davranışı gerçekleştirmesini sağlar. Go'da arayüzler, esnekliği ve yeniden kullanılabilirliği artırmak için kullanılır.
 
-#### Arayüzlerin Go Dilindeki Yeri
+## Arayüzlerin Go Dilindeki Yeri
+
 - **Soyutlama**: Arayüzler, farklı türlerin benzer davranışlarını soyutlamaya yardımcı olur. Bu sayede, bir arayüzü uygulayan her tür, arayüzde tanımlı metotları gerçekleştirmek zorundadır.
 - **Polimorfizm**: Arayüzler, farklı türlerin aynı arayüz üzerinden kullanılmasını sağlar. Bu, yazılımın daha esnek ve modüler olmasına yardımcı olur.
 
-#### Arayüz Tanımlama ve Implementasyonu
+## Arayüz Tanımlama ve Uygulama
+
 Bir arayüz tanımlamak için `type` anahtar kelimesi kullanılır. Aşağıda basit bir arayüz tanımı ve bu arayüzü uygulayan bir tür örneği verilmiştir:
 
-[Örnek 1 Code](codes/ornek1/ornek1.go)
+## Örnek 1: Temel Arayüz Kullanımı
 
 ```go
 package main
@@ -49,16 +51,18 @@ func main() {
 }
 ```
 
-Bu örnekte, `Animal` arayüzü `Speak` adlı bir metot tanımlar. `Dog` ve `Cat` türleri, bu arayüzü uygulayarak kendi `Speak` metotlarını sağlar.
+## Açıklamalar:
+- **Animal Arayüzü**: `Speak()` metodu tanımlar. Bu metodu uygulayan her tür, bu metodu içermek zorundadır.
+- **Dog ve Cat**: Bu türler, `Animal` arayüzünü uygulayarak kendi `Speak` metotlarını sağlar.
+- **main Fonksiyonu**: `Animal` tipinde bir değişken ile `Dog` ve `Cat` türleri üzerinde işlem yapar.
 
-![Örnek 1 Çıktı](images/ornek1.png)
+![Örnek 1 Çıktı](https://via.placeholder.com/300x100?text=Output%3A+Woof%21+Meow%21)
 
-#### Dinamik Tipler ve Type Assertion
-Go dilinde dinamik tipler, bir arayüz değişkeni ile çalıştığınızda ortaya çıkar. Arayüzler, farklı türlerdeki verileri saklamak için kullanılabilir. Type assertion, bir arayüz değişkeninin belirli bir türde olup olmadığını kontrol etmenizi sağlar.
+## Dinamik Tipler ve Type Assertion
 
-Type assertion kullanımı aşağıdaki gibidir:
+Go dilinde dinamik tipler, bir arayüz değişkeni ile çalıştığınızda ortaya çıkar. Arayüzler, farklı türlerdeki verileri saklamak için kullanılabilir. **Type assertion**, bir arayüz değişkeninin belirli bir türde olup olmadığını kontrol etmenizi sağlar.
 
-[Örnek 2 Code](codes/ornek2/ornek2.go)
+## Örnek 2: Type Assertion Kullanımı
 
 ```go
 package main
@@ -92,19 +96,19 @@ func main() {
 }
 ```
 
-![Örnek 2 Çıktı](images/ormek2.png)
+## Açıklamalar
 
+- **Type Assertion**: `animal.(Dog)` ifadesi ile `animal` değişkeninin `Dog` türünde olup olmadığını kontrol ederiz. Eğer `animal` bir `Dog` ise, `ok` değişkeni `true` değerini alır ve ilgili metot çağrılır.
 
-Bu örnekte, `animal` değişkeninin `Dog` türünde olup olmadığını kontrol etmek için type assertion kullanılmıştır. Eğer `animal` bir `Dog` ise, `ok` değişkeni `true` değerini alır ve ilgili metot çağrılır.
+![Örnek 2 Çıktı](https://via.placeholder.com/300x100?text=Output%3A+Animal+is+a+Dog%3A+Woof%21)
 
+# Çoklu Arayüzler ile Çoklu Kalıtım Davranışı
 
-# Çoklu Arayüzler Sayesinde Çoklu Kalıtım Davranışı
+Go dilinde çoklu kalıtım doğrudan desteklenmez, ancak arayüzler (interfaces) kullanarak benzer bir davranış elde edilebilir. Aşağıda, bu kavramı daha iyi anlamak için birkaç örnek sunuyorum.
 
-Go dilinde çoklu kalıtım doğrudan desteklenmez, ancak arayüzler (interfaces) kullanarak benzer bir davranışı elde edebiliriz. Arayüzler, birden fazla arayüzün birleşimini sağlayarak çoklu kalıtım gibi bir yapı oluşturmanıza olanak tanır. Aşağıda, bu kavramı daha iyi anlamak için birkaç örnek sunuyorum.
+## Örnek 3: Çoklu Arayüz Uygulama
 
-### Örnek: Çoklu Arayüz Uygulama
-
-Bir hayvan sınıfının farklı davranışları temsil eden birkaç arayüz tanımlayalım. Bu arayüzler, hayvanların konuşma ve hareket etme yeteneklerini tanımlasın.
+Bir hayvan sınıfının farklı davranışlarını temsil eden birkaç arayüz tanımlayalım. Bu arayüzler, hayvanların konuşma ve hareket etme yeteneklerini tanımlasın.
 
 ```go
 package main
@@ -166,9 +170,12 @@ func main() {
 }
 ```
 
-Bu örnekte, `Animal` arayüzü hem `Speaker` hem de `Mover` arayüzlerini içerir. `Dog` ve `Cat` türleri, bu arayüzleri uygulayarak her iki davranışın da nasıl gerçekleştirileceğini tanımlar.
+## Açıklamalar
 
-### Örnek: Çoklu Arayüzleri Birleştirme
+- **Animal Arayüzü**: `Speaker` ve `Mover` arayüzlerini birleştirir. Bu sayede `Dog` ve `Cat` türleri hem konuşabilir hem de hareket edebilir.
+- **main Fonksiyonu**: `Animal` tipi kullanılarak her iki tür üzerinde de işlemler yapılır.
+
+### Örnek 4: Çoklu Arayüzleri Birleştirme
 
 Farklı arayüzleri bir araya getirerek daha karmaşık bir yapı oluşturalım.
 
@@ -216,9 +223,11 @@ func main() {
 }
 ```
 
-Burada, `BirdFish` arayüzü hem `Flyer` hem de `Swimmer` arayüzlerini içeriyor. `Duck` türü bu arayüzü uygulayarak hem uçma hem de yüzme yeteneğini kazanıyor.
+## Açıklamalar
 
-### Örnek: Type Assertion ile Çoklu Kalıtım
+- **BirdFish Arayüzü**: Hem `Flyer` hem de `Swimmer` arayüzlerini içerir. `Duck` türü bu arayüzü uygulayarak hem uçma hem de yüzme yeteneğini kazanır.
+
+### Örnek 5: Type Assertion ile Çoklu Kalıtım
 
 Type assertion kullanarak bir arayüzün belirli bir türde olup olmadığını kontrol edebiliriz. Bu, farklı türlerin aynı işlevselliği nasıl sunduğunu görmek için yararlıdır.
 
@@ -290,14 +299,6 @@ func speakAndMove(a Animal) {
 }
 ```
 
-Bu örnekte, `speakAndMove` fonksiyonu bir `Animal` türünde bir argüman alır. Type assertion kullanarak, verilen argümanın `Dog` veya `Cat` olup olmadığını kontrol ederiz.
+## Açıklamalar
 
-### Özet
-- Arayüzler, Go dilinde nesne yönelimli programlamanın önemli bir parçasıdır ve esneklik sağlar.
-- Arayüzler, bir grup metot imzasını tanımlar ve bu metotları uygulayan türlerin belirli bir davranışı yerine getirmesini zorunlu kılar.
-- Dinamik tipler ve type assertion, arayüzlerle çalışma sırasında tür kontrolü yapmamıza olanak tanır.
-- **Çoklu Arayüz Uygulama**: Birden fazla arayüzü birleştirerek karmaşık davranışlar tanımlayabiliriz.
-- **Type Assertion**: Arayüzlerin belirli türlerle çalışmasını sağlamak için kullanılır.
-- **Esneklik ve Modülerlik**: Arayüzler, farklı türlerin aynı işlevselliği paylaşmasını sağlar, bu da kodun daha esnek ve modüler olmasına olanak tanır.
-
-Arayüzler, Go dilinde çoklu kalıtımı dolaylı olarak sağlamak için güçlü bir araçtır ve kodunuzu daha düzenli ve sürdürülebilir hale getirir.
+- **speakAndMove Fonksiyonu**: `Animal` türünde bir argüman alır. `Type assertion
