@@ -13,12 +13,12 @@ Aşağıda, Go Dili Eğitimi İçerik Ajandası'nın markdown formatında düzen
 # Go Dili Eğitimi İçerik Ajandası
 
 ## Modül 1: Go'ya Giriş ve Kurulum
-- Go dilinin genel özellikleri ve tarihçesi.
-- Go’nun güçlü yönleri ve kullanım alanları.
-- Go dilini bilgisayara kurma (Windows, Linux, macOS).
-- İlk Go programı yazma ve çalıştırma.
-  - Go çalışma zamanı (runtime) nasıl çalışır?
-  - Go'nun derleme ve çalıştırma süreci.
+- [Go dilinin genel özellikleri ve tarihçesi](./modul1/1-10-go-dilinin-tarihcesi.md)
+- [Go’nun güçlü yönleri ve kullanım alanları](./modul1/1-30-guclu-yanlari-kullanim-alanlari.md)
+- [Go dilini bilgisayara kurma (Windows, Linux, macOS)](./modul1/1-40-go-bilgisayara-kurma-windows.md)
+- [İlk Go programı yazma ve çalıştırma](./modul1/1-50-ilk-kod-calistirma.md)
+  - [Go çalışma zamanı (runtime) nasıl çalışır?](modul1/calis)
+  - [Go'nun derleme ve çalıştırma süreci](./modul1/1-52-go-derleme-calistirma-sureci.md)
 
 ## Modül 2: Temel Go Yapıları
 - **Değişkenler ve Veri Tipleri**
